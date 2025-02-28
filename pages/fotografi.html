@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Fotografi</title>
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/photography.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="gallery-container">
+      <h1>Galeri Fotografi</h1>
+      <div class="gallery">
+        <img
+          src="../assets/images/Fotografi/photo1.jpg"
+          alt="Foto 1"
+          onclick="openModal('../assets/images/Fotografi/photo1.jpg', 'Senja mengajarkan bahwa yang indah pun harus pergi', '28 Maret 2021')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo2.jpg"
+          alt="Foto 2"
+          onclick="openModal('../assets/images/Fotografi/photo2.jpg', 'Langit biru dan hijau pepohonan berpadu dalam damai', '22 Juli 2023')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo3.jpg"
+          alt="Foto 3"
+          onclick="openModal('../assets/images/Fotografi/photo3.jpg', 'Perjalanan kecil hari ini, kenangan besar di masa depan', '26 November 2023')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo4.jpg"
+          alt="Foto 4"
+          onclick="openModal('../assets/images/Fotografi/photo4.jpg', 'Sendiri di jalan, tapi selalu di temani oleh mimpi', '08 Desember 2023')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo5.jpg"
+          alt="Foto 5"
+          onclick="openModal('../assets/images/Fotografi/photo5.jpg', 'Tak perlu terburu-buru, yang penting tetap melaju', '08 Desember 2023')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo6.jpg"
+          alt="Foto 6"
+          onclick="openModal('../assets/images/Fotografi/photo6.jpg', 'Menikmati perjalanan, membawa pulang ketenangan', '27 Desember 2023')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo7.jpg"
+          alt="Foto 7"
+          onclick="openModal('../assets/images/Fotografi/photo7.jpg', 'Langit, Gunung, dan Sawah mengajarkan ketenangan dalam kesederhanaan', '18 Juni 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo8.jpg"
+          alt="Foto 8"
+          onclick="openModal('../assets/images/Fotografi/photo8.jpg', 'Hutan sunyi, tangga sepi, tetapi langkahmu tetap berarti', '24 Agustus 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo9.jpg"
+          alt="Foto 9"
+          onclick="openModal('../assets/images/Fotografi/photo9.jpg', 'Setiap jepretan adalah cerita yang tak akan gugur oleh waktu', '24 Agustus 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo10.jpg"
+          alt="Foto 10"
+          onclick="openModal('../assets/images/Fotografi/photo10.jpg', 'Setiap cabang memiliki arah, tapi tetap berasal dari akar yang sama', '24 Agustus 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo11.jpg"
+          alt="Foto 11"
+          onclick="openModal('../assets/images/Fotografi/photo11.jpg', 'Momen sederhana hari ini bisa jadi kenangan berharga di masa depan', '24 Agustus 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo12.jpg"
+          alt="Foto 12"
+          onclick="openModal('../assets/images/Fotografi/photo12.jpg', 'Daun gugur bukan akhir, tetapi jeda sebelum kehidupan tumbuh kembali', '24 Agustus 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo13.jpg"
+          alt="Foto 13"
+          onclick="openModal('../assets/images/Fotografi/photo13.jpg', 'Jangan takut berubah, bahkan pohon pun melepaskan daunnya', '24 Agustus 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo14.jpg"
+          alt="Foto 14"
+          onclick="openModal('../assets/images/Fotografi/photo14.jpg', 'Bahkan hal kecil bisa bersinar dalam sorotan yang tepat', '15 September 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo15.jpg"
+          alt="Foto 15"
+          onclick="openModal('../assets/images/Fotografi/photo15.jpg', 'Berani berbeda adalah cara untuk bersinar', '15 September 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo16.jpg"
+          alt="Foto 16"
+          onclick="openModal('../assets/images/Fotografi/photo16.jpg', 'Menonjol bukan soal ukuran, tapi tentang keberanian menjadi unik', '15 September 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo17.jpg"
+          alt="Foto 17"
+          onclick="openModal('../assets/images/Fotografi/photo17.jpg', 'Terus melaju, meski jalurmu tak seperti yang lain', '16 September 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo18.jpg"
+          alt="Foto 18"
+          onclick="openModal('../assets/images/Fotografi/photo18.jpg', 'Biarkan mimpimu melayang melebihi tingginya langit', '17 September 2024')"
+        />
+        <img
+          src="../assets/images/Fotografi/photo19.jpg"
+          alt="Foto 19"
+          onclick="openModal('../assets/images/Fotografi/photo19.jpg', 'Tak perlu bebas sepenuhnya untuk tetap bersinar', '25 Oktober 2024')"
+        />
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <img id="modal-img" src="" />
+          <p id="modal-caption"></p>
+          <p id="modal-date"></p>
+          <span class="close" onclick="closeModal()"
+            ><i class="bx bx-x"></i
+          ></span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="social">
+        <a
+          href="https://www.instagram.com/elanghabibi?igsh=MXNncHJ0cjdrNGE5dw=="
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="blank.html"><i class="bx bxl-twitter"></i></a>
+        <a href="blank.html"><i class="bx bxl-github"></i></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="../home.html#home">Tentang Saya</a>
+        </li>
+
+        <li>
+          <a href="../home.html#skill">Keahlian</a>
+        </li>
+
+        <li>
+          <a href="pages/portfolio.html">Portofolio</a>
+        </li>
+      </ul>
+
+      <p class="copyright">© Elang A. Habibi | All Rights Deserved</p>
+    </footer>
+
+    <script>
+      function openModal(imageSrc, caption, date) {
+        document.getElementById("modal-img").src = imageSrc;
+        document.getElementById("modal-caption").innerText = caption;
+        document.getElementById("modal-date").innerText = date;
+        document.getElementById("modal").style.display = "flex";
+      }
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+
+      document.addEventListener("dragstart", (event) => event.preventDefault());
+
+      document.addEventListener("keydown", function (event) {
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && event.shiftKey && event.key === "I") ||
+          (event.ctrlKey && event.shiftKey && event.key === "J") ||
+          (event.ctrlKey && event.key === "U")
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>

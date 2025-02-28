@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projek Portofolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .back {
+        position: absolute;
+        font-size: 24px;
+        top: 10px;
+        left: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../home.html" class="back"
+      ><i class="bx bx-chevron-left"></i>Kembali</a
+    >
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-content">
+        <h2 class="portfolio-title heading">Portofolio</h2>
+
+        <div class="box-container">
+          <div class="box">
+            <div class="box-content">
+              <i class="bx bx-globe"></i>
+              <a class="pf-btn" href="blank.html">Pengembangan Web</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-content">
+              <i class="bx bx-shape-triangle"></i>
+              <a class="pf-btn" href="blank.html">Desain Grafis</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-content">
+              <i class="bx bx-image-alt"></i>
+              <a class="pf-btn" href="fotografi.html">Fotografi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+    document.addEventListener("dragstart", (event) => event.preventDefault());
+
+    document.addEventListener("keydown", function (event) {
+      if (
+        event.key === "F12" ||
+        (event.ctrlKey && event.shiftKey && event.key === "I") ||
+        (event.ctrlKey && event.shiftKey && event.key === "J") ||
+        (event.ctrlKey && event.key === "U")
+      ) {
+        event.preventDefault();
+      }
+    });
+  </script>
+</html>
