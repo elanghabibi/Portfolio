@@ -1,0 +1,51 @@
+:root {
+    --skill1: 20%;
+    --skill2: 45%;
+    --skill3: 65%;
+}
+
+.progress-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.progress-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-circle::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: var(--second-bg-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.progress-circle span {
+    font-size: 24px;
+    text-align: center;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.pc1 {
+    background: conic-gradient(var(--main-color) var(--skill1), #ddd 0%);
+}
+
+.pc2 {
+    background: conic-gradient(var(--main-color) var(--skill2), #ddd 0%);
+}
+
+.pc3 {
+    background: conic-gradient(var(--main-color) var(--skill3), #ddd 0%);
+}
+
+.progress-circle {
+    transition: all .4s ease;
+}
