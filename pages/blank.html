@@ -38,6 +38,36 @@
             font-weight: bold;
             color: var(--main-color);
         }
+
+        h1, p, .error-code {
+            animation: shadow 3s infinite;
+        }
+
+        @media(max-width: 750px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+            .error-code {
+                font-size: 5rem;
+            }
+        }
+
+        @keyframes shadow {
+            0% {
+                text-shadow: none;
+            }
+
+            50% {
+                text-shadow: 0 0 20px #00a2ffa4;
+            }
+
+            100% {
+                text-shadow: none;
+            }
+        }
     </style>
 </head>
 <body>
