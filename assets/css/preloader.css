@@ -2,9 +2,7 @@
   --hue: 210;
   --bg: #151f28;
   --fg: hsl(var(--hue), 10%, 15%);
-  --red: #df0320;
   --white: #fafafa;
-  --blue: transparent;
   --trans-dur: 0.3s;
 }
 
