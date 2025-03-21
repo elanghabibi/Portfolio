@@ -1,4 +1,4 @@
-let images = document.querySelectorAll(".gallery .img");
+let images = document.querySelectorAll(".photography-content .img");
 
 let path = "../../../assets/images/fotografii/";
 
@@ -89,7 +89,3 @@ for (let i = 0; i < images.length; i++) {
   let reversedIndex = images.length - 1 - i; // Membalik urutan
   images[i].style.backgroundImage = `url('${path}photo${reversedIndex + 1}.jpg')`;
 }
-
-const photographyPost = document.getElementById("photographyPost")
-
-photographyPost.textContent = `${modalText.length}`
