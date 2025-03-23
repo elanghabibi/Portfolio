@@ -28,15 +28,17 @@ menuIcon.onclick = () => {
 
 }
 
-document.addEventListener('contextmenu', event => event.preventDefault());
-
-document.addEventListener('dragstart', event => event.preventDefault());
-
-document.addEventListener("keydown", function(event) {
-    if (event.key === "F12" || 
-        (event.ctrlKey && event.shiftKey && event.key === "I") || 
-        (event.ctrlKey && event.shiftKey && event.key === "J") || 
-        (event.ctrlKey && event.key === "U")) {
+document.addEventListener("keydown", function (event) {
+    // Blokir Ctrl+U, F12, Ctrl+Shift+I, Ctrl+Shift+J, dan Ctrl+Shift+C
+    if (event.ctrlKey && (event.key === "u" || event.key === "U" || 
+        event.key === "i" || event.key === "I" || 
+        event.key === "j" || event.key === "J" || 
+        event.key === "c" || event.key === "C") || event.key === "F12") {
         event.preventDefault();
     }
+});
+
+// Mencegah klik kanan
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
 });
