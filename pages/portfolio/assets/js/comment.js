@@ -47,11 +47,9 @@ loadComments();
 function openComment() {
   let comment = document.getElementById("modalComment");
   comment.style.display = "flex";
-  body.classList.add("no-scroll");
 }
 
 function closeComment() {
   let comment = document.getElementById("modalComment");
   comment.style.display = "none";
-  body.classList.remove("no-scroll");
 }
