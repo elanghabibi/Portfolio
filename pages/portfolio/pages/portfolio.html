@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Elang Alamsyah Habibi</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../../../assets/css/preloader.css">
     <link rel="stylesheet" href="../assets/css/modal.css">
+    <link rel="stylesheet" href="../assets/css/comment.css">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -114,8 +115,6 @@
           </g>
         </svg>
     </div>
-  
-
 
     <header class="nav-title">
       <a href="../../../home.html"><i class="bx bx-left-arrow-alt"></i></a>
@@ -139,11 +138,12 @@
         </div>
         <div class="photography-post">
           <h3 id="photographyPost">0</h3>
-          <h5>Foto</h5>
+          <h5>Fotografi</h5>
         </div>
       </div>
+      <button onclick="openComment()" class="open-comment-btn">Komen</button>  
     </div>
-
+    
     <hr color="#202020" size="3" noshade />
 
     <div class="content">
@@ -194,15 +194,32 @@
         <div class="img"></div>
       </div>
 
-
-
       <div class="modal" id="modal">
         <img id="modalImg" alt="">
         <span class="close" onclick="closeModal()"><i class="bx bx-x"></i></span>
         <p class="warning">skylangg</p>
         <p class="copyright">© Elang A. Habibi | All Rights Deserved</p>
       </div>
+
+      <div class="comment-container" id="modalComment">
+        <div class="modal-comment">
+          <header class="title-comment">
+            <i class="bx bx-left-arrow-alt" onclick="closeComment()"></i>
+            <h2>Komentar</h2>
+          </header>
+          
+          <div id="commentSection"></div>
+    
+          <form id="commentForm">
+            <input type="text" id="nama" placeholder="Nama" required />
+            <input id="komentar" placeholder="Komentar" required></input>
+            <button type="submit"><i class="bx bx-paper-plane"></i></button>
+          </form>
+        </div>  
+      </div>
     </div>
+
+
   </body>
   <script>
     document.addEventListener("keydown", function (event) {
@@ -222,5 +239,6 @@
 
   </script>
   <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/comment.js"></script>
   <script src="../../../assets/js/preloader.js"></script>
 </html>
