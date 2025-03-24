@@ -1,4 +1,5 @@
 let path = "../../../assets/images/";
+const body = document.body;
 
 // * Web
 let webBtn = document.getElementById("webBtn");
@@ -89,6 +90,7 @@ for (let i = 0; i < photoImages.length; i++) {
       reversedIndex + 1
     }.jpg`;
     document.getElementById("modal").style.display = "flex";
+    body.classList.add("no-scroll");
   });
 }
 
@@ -106,6 +108,7 @@ function photoShow() {
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
+  body.classList.remove("no-scroll");
 }
 
 window.addEventListener("load", function () {
