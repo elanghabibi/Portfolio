@@ -61,7 +61,7 @@
 .comment-box {
   margin-bottom: 20px;
   width: 75%;
-  height: 60px;
+  height: auto;
   padding: 10px 0 10px 0;
   display: flex;
   flex-direction: column;
