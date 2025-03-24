@@ -12,7 +12,7 @@
 }
 
 .modal-comment {
-  height: 90vh;
+  height: 80vh;
   width: 90vw;
   background-color: var(--second-bg-color);
   border-radius: 20px;
