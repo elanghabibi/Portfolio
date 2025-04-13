@@ -1,4 +1,4 @@
-let path = "../../../assets/images/";
+let path = "../../assets/images/";
 const body = document.body;
 
 // * Web
