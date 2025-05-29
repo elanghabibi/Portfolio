@@ -170,7 +170,6 @@ body {
   cursor: pointer;
 }
 
-
 .gallery h4 {
   color: #444;
   width: 100vw;
@@ -182,6 +181,59 @@ body {
 
 .show {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+/* web content gallery */
+
+.web-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.web-content-list {
+  margin-top: 5vh;
+  height: 40vh;
+  width: 85vw;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  border-radius: 10px;
+}
+
+.cp-web-list {
+  margin-left: 5rem;
+  color: var(--second-text-color);
+}
+
+.cp-web-list h1 {
+  font-size: 1.5rem;
+}
+
+.cp-web-list p {
+  font-size: 1rem;
+  margin: 2rem 0;
+  text-indent: 20px;
+}
+
+.cp-web-list button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--main-color);
+  color: var(--second-text-color);
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.web-img {
+  height: 30vh;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
 }
 
 @keyframes fadeIn {
@@ -202,6 +254,39 @@ body {
   .post-indicator h3,
   .post-indicator h5 {
     font-size: 100%;
+  }
+
+  .web-content-list {
+    flex-direction: column;
+    height: auto;
+    width: 90vw;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .cp-web-list {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .cp-web-list h1 {
+    font-size: 1.3rem;
+  }
+
+  .cp-web-list p {
+    font-size: 0.95rem;
+    margin: 1.5rem 0;
+  }
+
+  .cp-web-list button {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .web-img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16/9;
   }
 }
 
