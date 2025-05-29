@@ -3,11 +3,11 @@ const body = document.body;
 
 // * Web
 let webBtn = document.getElementById("webBtn");
-let webImages = document.querySelectorAll(".web-content .img");
+let webLength = document.querySelectorAll(".web-content-list")
 let webContent = document.getElementById("web");
 
 // Indicator post web
-document.getElementById("webPost").innerText = webImages.length;
+document.getElementById("webPost").innerText = webLength.length;
 
 function webShow() {
   webBtn.classList.add("active");
@@ -19,20 +19,7 @@ function webShow() {
   photoContent.style.display = "none";
 }
 
-for (let i = 0; i < webImages.length; i++) {
-    let reversedIndex = webImages.length - 1 - i;
-    webImages[i].style.backgroundImage = `url('${path}web/photo${
-      reversedIndex + 1
-    }.jpg')`;
-  
-    webImages[i].addEventListener("click", function () {
-      webImages[i].alt = `Foto ${i}`;
-      document.getElementById("modalImg").src = `${path}web/photo${
-        reversedIndex + 1
-      }.jpg`;
-      document.getElementById("modal").style.display = "flex";
-    });
-  }
+
 
 // * end web
 
@@ -112,7 +99,7 @@ function closeModal() {
 }
 
 window.addEventListener("load", function () {
-  webContent.style.display = "none";
-  designContent.style.display = "grid";
+  webContent.style.display = "grid";
+  designContent.style.display = "none";
   photoContent.style.display = "none";
 });
