@@ -148,15 +148,26 @@
 
     <div class="content">
       <div class="nav-portfolio">
-        <p onclick="webShow()" id="webBtn">Web</p>
-        <p onclick="designShow()" id="designBtn" class="active">Desain</p>
+        <p onclick="webShow()" id="webBtn" class="active">Web</p>
+        <p onclick="designShow()" id="designBtn">Desain</p>
         <p onclick="photoShow()" id="photoBtn">Fotografi</p>
       </div>
 
       <hr color="#202020" size="3" noshade />
 
-      <div class="web-content gallery web show" id="web">
-        <h4>Belum ada project</h4>
+      <div class="web-content web show" id="web">
+        <div class="web-content-list">
+          <img src="../../assets/images/web/web1.jpg" alt="" class="web-img">
+
+          <div class="cp-web-list">
+            <h1>Web Perpustakaan</h1>
+            <p>
+              Website ini merupakan halaman utama dari sistem perpustakaan digital "Perpustakaan Suka Maju" yang menyediakan fitur pencarian, penambahan, dan penampilan daftar buku.
+              Dengan desain yang simpel dan responsif, pengguna dapat mengakses daftar buku, mengisi form tambah buku, serta melihat hasil pencarian melalui tampilan pop-up yang interaktif, semuanya dikendalikan oleh HTML, CSS, dan JavaScript.
+            </p>
+            <a href="https://elanghabibi.github.io/perpustakaan/home.html"><button>Lihat Web</button></a>
+          </div>
+        </div>
       </div>
 
       <div class="design-content gallery design show" id="design">
@@ -202,7 +213,6 @@
       <div class="modal" id="modal">
         <img id="modalImg" alt="">
         <span class="close" onclick="closeModal()"><i class="bx bx-x"></i></span>
-        <p class="warning">skylangg</p>
         <p class="copyright">© Elang A. Habibi | All Rights Deserved</p>
       </div>
 
@@ -258,6 +268,7 @@
       event.preventDefault();
     });
   </script>
+  <script src="assets/js/easteregg.js"></script>
   <script src="assets/js/script.js"></script>
   <script src="assets/js/comment.js"></script>
   <script src="../../assets/js/preloader.js"></script>
